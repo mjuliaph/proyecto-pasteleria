@@ -220,3 +220,21 @@ img {
     justify-content: space-evenly;
     margin: 4rem 0;
 }
+
+.main-contacto section .sucursales{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 3rem;
+}
+
+.main-contacto section .sucursales:nth-child(even){
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.main-contacto section .sucursales .sucursales-texto {
+    text-align: start;
+}
+
