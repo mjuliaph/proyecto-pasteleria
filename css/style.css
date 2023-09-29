@@ -221,15 +221,19 @@ img {
     margin: 4rem 0;
 }
 
-.main-contacto section .sucursales{
+.main-contacto section {
+    width: 50%;
+}
+
+.main-contacto section .sucursales {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     margin-top: 3rem;
 }
 
-.main-contacto section .sucursales:nth-child(even){
+.main-contacto section .sucursales:nth-child(even) {
     display: flex;
     flex-direction: row-reverse;
 }
@@ -238,3 +242,68 @@ img {
     text-align: start;
 }
 
+.main-contacto section .sucursales iframe {
+    border: 3px solid #7c3a77;
+    width: 300px;
+}
+
+.main-contacto form {
+    width: 30%;
+}
+
+
+/********VER PORQUE NO QUEDA MUY LINDO PISAR TANTO LOS ESTILOS ********/
+
+.form-control:focus {
+    color: #d07cae;
+    border-bottom: #7c3a77;
+    box-shadow: none;
+}
+
+.form-control {
+    border: none;
+    border-bottom: 3px solid #f087c6;
+    border-radius: 0;
+    transition: none;
+}
+
+.form-select:focus {
+    border-color: transparent;
+    outline: 0;
+    box-shadow: none;
+}
+
+.form-select {
+    border: none;
+    border-bottom: 3px solid #f087c6;
+    border-radius: 0;
+}
+
+.btn {
+    --bs-btn-bg: #f087c6;
+    --bs-btn-border-color: #f087c6;
+    --bs-btn-disabled-bg: #f087c6;
+    --bs-btn-disabled-border-color: #f087c6;
+}
+
+.btn-check:checked+.btn,
+.btn.active,
+.btn:hover,
+.btn.show,
+.btn:first-child:active,
+:not(.btn-check)+.btn:active {
+    color: #EDE3E9;
+    background-color: #7c3a77;
+    border-color: #EDE3E9;
+}
+
+.form-check-input:checked {
+    background-color: #f087c6;
+    border-color: #7c3a77;
+}
+
+.form-check-input:focus {
+    border-color: #7c3a77;
+    outline: 0;
+    box-shadow: none;
+}
