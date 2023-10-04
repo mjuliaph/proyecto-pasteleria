@@ -338,3 +338,103 @@ img {
         font-size: 1.5rem;
     }
 }
+
+
+
+/*********SECCION PRODUCTOS********/
+main.container-productos {
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 0;
+    row-gap: 3rem;
+    justify-items: center;
+    /* cambiar esta propiedad: */
+    margin: 2rem auto;
+}
+
+main.container-productos .container-producto {
+    position: relative;
+}
+
+main.container-productos .container-producto .container-img {
+    max-width: 250px;
+    max-height: 400px;
+}
+
+main.container-productos .container-producto .container-descripcion::before {
+    content: '';
+    position: absolute;
+    border-style: solid;
+    border-width: 0 0px 28px 250px;
+    border-color: transparent transparent #f7f7f7 transparent;
+    left: 0px;
+    top: -28px;
+}
+
+main.container-productos .container-producto .container-descripcion {
+    position: absolute;
+    bottom: 0;
+    background-color: #f7f7f7;
+    width: 250px;
+    height: 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width:991px) {
+    main.container-productos {
+        width: 100%;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (max-width:600px) {
+    main.container-productos {
+        width: 100%;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    main.container-productos .container-producto .container-img {
+        max-width: 200px;
+        max-height: 300px;
+    }
+
+    main.container-productos .container-producto .container-descripcion::before {
+        border-width: 0 0px 28px 200px;
+        border-color: transparent transparent #f7f7f7 transparent;
+    }
+
+    main.container-productos .container-producto .container-descripcion {
+        width: 200px;
+        height: 25%;
+        bottom: -50px;
+    }
+}
+
+@media screen and (max-width:480px) {
+    main.container-productos {
+        margin-top: 3rem;
+        width: 100%;
+        grid-template-columns: 1fr;
+        row-gap: 5rem;
+    }
+
+    main.container-productos .container-producto .container-img {
+        max-width: 300px;
+        max-height: 400px;
+    }
+
+    main.container-productos .container-producto .container-descripcion::before {
+        border-width: 0 0px 28px 300px;
+        border-color: transparent transparent #f7f7f7 transparent;
+    }
+
+    main.container-productos .container-producto .container-descripcion {
+        width: 300px;
+        height: 15%;
+
+    }
+}
