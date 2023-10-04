@@ -143,6 +143,7 @@ img {
 
 .main-academia .container {
     display: flex;
+    flex-direction: row;
     justify-content: space-evenly;
 }
 
@@ -306,4 +307,34 @@ img {
     border-color: #7c3a77;
     outline: 0;
     box-shadow: none;
+}
+
+@media screen and (max-width: 991px) {}
+
+@media screen and (max-width: 576px) {
+    .main-academia .container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .main-academia section:not(.impar) .container::before {
+        background-color: transparent;
+    }
+
+    .main-academia .container div {
+        max-width: 300px;
+    }
+
+    .main-academia .container p {
+        font-size: 0.85rem;
+        max-width: 300px;
+        text-align: center;
+        line-height: 1.6;
+        padding: 1rem 0;
+    }
+
+    .main-academia .container p span {
+        font-size: 1.5rem;
+    }
 }
