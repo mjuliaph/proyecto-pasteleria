@@ -1,84 +1,142 @@
 <!DOCTYPE html>
-<html lang="es">
-
-  <head>
+<html lang="en">
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png">
+    <script src="https://kit.fontawesome.com/0fb7144512.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100;0,8..144,300;0,8..144,400;0,8..144,700;1,8..144,100;1,8..144,300;1,8..144,400;1,8..144,700&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/e46ca593ec.js" crossorigin="anonymous"></script>
-    <title>Home</title>
-
-  </head>
-
-  <body>
-      <div class="header">
-        <div class="logo">
-            <img href="./index.html" src="./assets/logo.png" alt="logo">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="header">
+        <a href="./index.html"><img src="./assets/logo.png" class="header-img" alt="logo"></a>
+        <nav class="nav" id="nav">
+            <div class="cerrar-menu" id="cerrar">
+                <a href="#"><i class="fa-solid fa-xmark"></i></a>
+            </div>
+            <ul class="navbar">
+                    <li><a href="./views/academia.html">Academia</a></li>
+                    <li><a href="./views/contacto.html">Contacto</a></li>
+                    <li><a href="./views/historia.html">Historia</a></li>
+                    <li><a href="./views/productos.html">Productos</a></li>
+            </ul>
+        </nav>
+        <div class="search">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" class="search-input" placeholder="Buscar" maxlength="21">
         </div>
-        <div class="nav">
-          <ul class="nav-list">
-            <li><a href="./views/productos.html">Productos</a></li>
-            <li><a href="./views/historia.html">Sobre Nosotros</a></li>
-            <li><a href="./views/academia.html">Academia</a></li>
-            <li><a href="./views/contacto.html">Contacto</a></li>
-          </ul>
+        <div class="menu" id="abrir">
+                <a href="#"><i class="fa-solid fa-bars"></i></a>
+        </div>  
+        <div class="cart">
+            <a href="./carrito.html"><i class="fa-solid fa-cart-shopping"></i></a>
         </div>
-    </div>
-    <div id="conteItemsCarrusel">
-      <div class="itemCarrusel" id="itemCarrusel-1">
-          <div class="tarjetaCarrusel" id="tarjetaCarrusel-1">
-              <img src="./assets/pan-molde.jpg" alt="dulces">
-          </div>
-          <div class="flechasCarrusel">
-              <a href="#itemCarrusel-3">
-                  <i class="fa-solid fa-chevron-left"></i>
-              </a>
-              <a href="#itemCarrusel-2">
-                  <i class="fa-solid fa-chevron-right"></i>
-              </a>
-          </div>
-      </div>
-      <div class="itemCarrusel" id="itemCarrusel-2">
-          <div class="tarjetaCarrusel" id="tarjetaCarrusel-2">
-              <img src="./assets/pastel-fiesta-rosa.jpg" alt="dulces">
-          </div>
-          <div class="flechasCarrusel">
-              <a href="#itemCarrusel-1">
-                  <i class="fa-solid fa-chevron-left"></i>
-              </a>
-              <a href="#itemCarrusel-3">
-                  <i class="fa-solid fa-chevron-right"></i>
-              </a>
-          </div>
-      </div>
-      <div class="itemCarrusel" id="itemCarrusel-3">
-          <div class="tarjetaCarrusel" id="tarjetaCarrusel-3">
-              <img src="./assets/muffins-banana.jpg" alt="dulces">
-          </div>
-          <div class="flechasCarrusel">
-              <a href="#itemCarrusel-2">
-                  <i class="fa-solid fa-chevron-left"></i>
-              </a>
-              <a href="#itemCarrusel-1">
-                  <i class="fa-solid fa-chevron-right"></i>
-              </a>
-          </div>
-      </div>
-  </div>
-  <div class="contePuntos">
-      <a href="#itemCarrusel-1"><i class="fa-solid fa-circle" class="point"></i></a>
-      <a href="#itemCarrusel-2"><i class="fa-solid fa-circle" class="point"></i></a>
-      <a href="#itemCarrusel-3"><i class="fa-solid fa-circle" class="point"></i></a>
-  </div>
+    </header>
 
-    <main></main>
-
-    <footer></footer>
-
+    <main class="main">
+        <div class="carrousel">
+            <img src="./assets/canasta-panes-2.jpg" id="img-carrousel" class="img-car" alt="imagen">
+            <div class="flechas">
+                <i class="fa-solid fa-chevron-left" id="izq"></i>
+                <i class="fa-solid fa-chevron-right" id="der"></i>
+            </div>
+        </div>
+        <div class="section-products">
+            <div class="products">
+                <div class="products-container">
+                    <img src="./assets/cupcake-chocolate-2.jpg" alt="imagen">
+                    <a href="#">Productos Dulces</a>
+                </div>
+            </div>
+            <div class="products">
+                <div class="products-container">
+                    <img src="./assets/chipa.jpg" alt="imagen">
+                    <a href="#">Productos Salados</a>
+                </div>
+            </div>
+            <div class="products">
+                <div class="products-container">
+                    <img src="./assets/red-velvet.jpg" alt="imagen">
+                    <a href="#">Pasteleria</a>
+                </div>
+            </div>
+        </div>
+        <div class="section-presupuesto">
+            <div class="container">
+                <div class="title-container">
+                    <h3>Presupuesto sin cargo</h3>
+                    <h5>Te asesoramos y armamos el servicio lunch a tu medida!</h5>
+                </div>
+                <div class="button">
+                    <a href="./views/contacto.html">Pedi tu Presupuesto</a>
+                </div>
+            </div>
+        </div>
+        <div class="section-info">
+            <div class="info-redes">
+                <div class="redes-uno">
+                    <div class="line"></div>
+                    <h2 class="title-h2">@LasLilasPasteleria</h2>
+                    <div class="insta">
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <h3 class="insta-h3">Nuestro Instagram</h3>
+                        <button class="button-info">Ver Perfil</button>
+                    </div>
+                </div>
+                <div class="redes-dos">
+                    <div class="line"></div>
+                    <h2 class="title-h2">Seguinos</h2>
+                    <ul class="icon-redes">
+                        <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fab fa-pinterest"></i></a></li>
+                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="info-news">
+                <div class="info-uno">
+                    <div class="line-news"></div>
+                    <h2 class="info-h2">Nuestro Newsletter</h2>
+                </div>
+                <div class="info-dos">
+                    <h3 class="info-h3">Mandamos descuentos sorpresa! Anotate!</h3>
+                    <form action="form" class="form-news">
+                        <input type="text" placeholder="Nombre" maxlength="30" required>
+                        <input type="email" placeholder="Email" maxlength="30" required>
+                        <button class="button-info">Inscribirse</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="footer-nave">
+            <h3 class="footer-title">Navegacion</h3>
+            <ul class="footer-ul">
+                <li><a href="../views/academia.html">Academia</a></li>
+                <li><a href="../views/contacto.html">Contacto</a></li>
+                <li><a href="../views/historia.html">Historia</a></li>
+                <li><a href="../views/productos.html">Productos</a></li>
+            </ul>
+        </div>
+        <div class="footer-contact">
+            <h3 class="footer-title">Contactanos</h3>
+            <ul class="contact-ul">
+                <li><a href="#"><i class="fas fa-phone-alt"></i></a>Todos los dias de 9 a 20:30hs</li>
+                <li><a href="#"><i class="fas fa-envelope"></i></a>contacto@laslilaspasteleria.com.ar</li>
+                <li><a href="#"><i class="fas fa-map-marker-alt"></i></a>Seguinos! @LasLilasPasteleria</li>
+            </ul>
+        </div>
+        <div class="derechos">
+            <p>Copyright Las Lilas Pasteleria 2023. Todos los derechos reservados</p>
+        </div>
+    </footer>
+    <script src="./js/script.js"></script>
   </body>
 
 </html>
