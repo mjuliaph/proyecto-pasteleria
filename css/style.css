@@ -498,6 +498,265 @@
     padding-top: 1rem;
 }
 
+/*    JULIA  */
+
+
+.main-academia {
+    /* la fuente la pondría directamente en el body */
+    font-family: 'Roboto Serif', sans-serif;
+}
+
+.main-academia section {
+    position: relative;
+    width: 100%;
+    margin: 4rem 0;
+}
+
+.main-academia section.impar {
+    background-color: #EDE3E9;
+    padding: 2rem 0;
+    border-radius: 15px;
+}
+
+.main-academia .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.main-academia section:not(.impar) .container::before {
+    content: '';
+    position: absolute;
+    background-color: #EDE3E9;
+    width: 4px;
+    height: 100%;
+    /* aspect-ratio: 1; */
+    border-radius: 10px;
+}
+
+.main-academia .container div {
+    max-width: 500px;
+    overflow: hidden;
+}
+
+.main-academia .container img {
+    display: block;
+    border-radius: 10px;
+    transition: 1s;
+    object-fit: cover;
+}
+
+.main-academia .container img:hover {
+    transform: scale(1.1);
+    opacity: 0.75;
+}
+
+.main-academia .container p {
+    align-self: center;
+    display: block;
+    max-width: 500px;
+    line-height: 2;
+}
+
+.main-academia .container p span {
+    font-family: 'Rouge Script', cursive;
+    color: #7c3a77;
+    font-size: 2rem;
+    line-height: 1;
+}
+
+.main-academia .btn-contacto {
+    background-color: #7c3a77;
+    width: 150px;
+    padding: 0.5rem 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3rem auto;
+    border-radius: 50px;
+}
+
+.main-academia .btn-contacto:hover {
+    background-color: #EDE3E9;
+    border: 1px solid #7c3a77;
+}
+
+.main-academia .btn-contacto a {
+    color: #EDE3E9;
+}
+
+.main-academia .btn-contacto a:hover {
+    color: #7c3a77;
+}
+
+
+/******** SECCIÓN CONTACTO ********/
+
+.main-contacto {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 4rem 0;
+}
+
+.main-contacto section {
+    width: 50%;
+}
+
+.main-contacto section .sucursales {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 3rem;
+}
+
+.main-contacto section .sucursales:nth-child(even) {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.main-contacto section .sucursales .sucursales-texto {
+    text-align: start;
+}
+
+.main-contacto section .sucursales iframe {
+    border: 3px solid #7c3a77;
+    width: 300px;
+}
+
+.main-contacto form {
+    display: block;
+    margin-top: 0;
+    width: 30%;
+}
+
+
+/********VER PORQUE NO QUEDA MUY LINDO PISAR TANTO LOS ESTILOS ********/
+
+
+input.form-control,
+select.form-select,
+textarea.form-control {
+    padding: 0.5rem;
+    background-color: rgb(250, 250, 250);
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    box-shadow: 0 2px 5px rgba(250, 9, 178, 0.3);
+}
+
+textarea.form-control {
+    height: 200px !important;
+    resize: none;
+}
+
+input::placeholder,
+select::placeholder,
+textarea::placeholder {
+    color: #7c3a77 !important;
+}
+
+.form-control:focus {
+    color: #d07cae;
+    border-bottom: #7c3a77;
+    box-shadow: none;
+}
+
+.form-control {
+    border: none;
+    border-bottom: 3px solid #f087c6;
+    border-radius: 0;
+    transition: none;
+}
+
+.form-select:focus {
+    border-color: transparent;
+    outline: 0;
+    box-shadow: none;
+}
+
+.form-select {
+    border: none;
+    border-bottom: 3px solid #f087c6;
+    border-radius: 0;
+}
+
+.btn {
+    --bs-btn-bg: #f087c6;
+    --bs-btn-border-color: #f087c6;
+    --bs-btn-disabled-bg: #f087c6;
+    --bs-btn-disabled-border-color: #f087c6;
+}
+
+.btn-check:checked+.btn,
+.btn.active,
+.btn:hover,
+.btn.show,
+.btn:first-child:active,
+:not(.btn-check)+.btn:active {
+    color: #EDE3E9;
+    background-color: #7c3a77;
+    border-color: #EDE3E9;
+}
+
+.form-check-input:checked {
+    background-color: #f087c6;
+    border-color: #7c3a77;
+}
+
+.form-check-input:focus {
+    border-color: #7c3a77;
+    outline: 0;
+    box-shadow: none;
+}
+
+
+/*********SECCION PRODUCTOS********/
+.container-productos {
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    margin: 2rem auto;
+    padding-top: 8rem;
+    overflow: hidden;
+}
+
+.container-productos .container-producto {
+    position: relative;
+}
+
+.container-productos .container-producto .container-img {
+    max-width: 250px;
+    max-height: 400px;
+    object-fit: cover;
+}
+
+.container-productos .container-producto .container-descripcion::before {
+    content: '';
+    position: absolute;
+    border-style: solid;
+    border-width: 0 0px 28px 250px;
+    border-color: transparent transparent #f7f7f7 transparent;
+    left: 0px;
+    top: -28px;
+}
+
+.container-productos .container-producto .container-descripcion {
+    position: absolute;
+    bottom: 0;
+    background-color: #f7f7f7;
+    width: 250px;
+    height: 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
 
 
 /* RESPONSIVE */
@@ -622,3 +881,127 @@
             grid-area: menu;
         }
     }
+
+@media screen and (max-width: 576px) {
+    .main-academia .container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .main-academia section:not(.impar) .container::before {
+        background-color: transparent;
+    }
+
+    .main-academia .container div {
+        max-width: 300px;
+    }
+
+    .main-academia .container p {
+        font-size: 0.85rem;
+        max-width: 300px;
+        text-align: center;
+        line-height: 1.6;
+        padding: 1rem 0;
+    }
+
+    .main-academia .container p span {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .main-contacto {
+        flex-direction: column;
+        margin: 2rem 0;
+    }
+
+    .main-contacto section {
+        width: 100%;
+    }
+
+    .main-contacto section .sucursales {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 1.5rem;
+    }
+
+    .main-contacto section .sucursales:nth-child(even) {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .main-contacto section .sucursales .sucursales-texto {
+        text-align: start;
+    }
+
+    .main-contacto section .sucursales iframe {
+        border: 3px solid #7c3a77;
+        width: 100%;
+    }
+
+    .main-contacto form {
+        margin-top: 2rem;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width:991px) {
+    main.container-productos {
+        width: 100%;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (max-width:600px) {
+    main.container-productos {
+        width: 100%;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    main.container-productos .container-producto .container-img {
+        max-width: 200px;
+        max-height: 300px;
+    }
+
+    main.container-productos .container-producto .container-descripcion::before {
+        border-width: 0 0px 28px 200px;
+        border-color: transparent transparent #f7f7f7 transparent;
+    }
+
+    main.container-productos .container-producto .container-descripcion {
+        width: 200px;
+        height: 25%;
+        bottom: -50px;
+    }
+}
+
+@media screen and (max-width:480px) {
+    main.container-productos {
+        margin-top: 3rem;
+        width: 100%;
+        grid-template-columns: 1fr;
+        row-gap: 5rem;
+    }
+
+    main.container-productos .container-producto .container-img {
+        max-width: 300px;
+        max-height: 400px;
+    }
+
+    main.container-productos .container-producto .container-descripcion::before {
+        border-width: 0 0px 28px 300px;
+        border-color: transparent transparent #f7f7f7 transparent;
+    }
+
+    main.container-productos .container-producto .container-descripcion {
+        width: 300px;
+        height: 15%;
+
+    }
+}
