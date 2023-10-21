@@ -16,7 +16,7 @@ cerrar.addEventListener("click", () => {
 let img = document.querySelector("#img-carrousel");
 let flechaIzq = document.querySelector("#izq");
 let flechaDer = document.querySelector("#der");
-let imagenes = ["./assets/alfajor-crema-chocolate.jpg", "./assets/anillos-anis.jpg", "./assets/brownie.jpg", "./assets/facturas.jpg", "./assets/galletas-corazon.jpg", "./assets/canasta-panes-2.jpg"];
+let imagenes = ["./assets/imagen-uno.jpg", "./assets/imagen-dos.png", "./assets/imagen-tres.jpg", "./assets/imagen-cuatro.jpg", "./assets/imagen-cinco.jpg", "./assets/imagen-uno.jpg"];
 let imgIndex = 0;
 
 flechaDer.addEventListener("click", ()=> {
