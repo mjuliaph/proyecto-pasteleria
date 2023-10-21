@@ -27,6 +27,7 @@
     justify-content: center;
     gap: 2rem;
     padding-top: 3rem;
+    font-family: 'Dancing Script', sans-serif;
 }
 
 .navbar li{
@@ -36,7 +37,7 @@
 .navbar li a{
     text-decoration: none;
     color: rgb(235, 22, 199);
-    font-size: 1.2rem;
+    font-size: 1.8rem;
 }
 
 .navbar li a:hover{
@@ -139,6 +140,8 @@
     justify-content: center;
     align-items: center;
     clip-path: polygon(0 24%, 100% 0, 100% 100%, 0% 100%);
+    font-family: 'Dancing Script', sans-serif;
+    font-weight: 800;
 }
 
 .products-container a:hover{
@@ -168,6 +171,7 @@
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0,0,0,.4);
     font-size: 1.1rem;
+    
 }
 
 .button {
@@ -414,6 +418,8 @@
     display: flex;
     flex-direction: column;
     gap: 1rem;
+    font-family: 'Dancing Script', sans-serif;
+    font-size: 1.3rem;
 }
 
 .footer-ul li{
@@ -484,6 +490,11 @@
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+}
+
+.container-academia p{
+    font-family: 'Dancing Script', sans-serif;
+    font-size: 1.3rem;
 }
 
 .main-academia section:not(.impar) .container-academia::before {
@@ -686,6 +697,8 @@ textarea::placeholder {
     overflow: hidden;
     background: linear-gradient(90deg, rgba(253,253,255,1) 0%, rgba(235,195,219,1) 100%);
     box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    font-family: 'Dancing Script', sans-serif;
+    font-size: 1.3rem;
 }
 
 .container-productos .container-producto {
