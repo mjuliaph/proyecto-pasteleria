@@ -723,6 +723,7 @@ textarea::placeholder {
     overflow: hidden;
 }
 
+
 .container-productos .container-producto {
     position: relative;
 }
@@ -952,29 +953,29 @@ textarea::placeholder {
 }
 
 @media screen and (max-width:991px) {
-    main.container-productos {
+    .container-productos {
         width: 100%;
         grid-template-columns: repeat(3, 1fr);
     }
 }
 
 @media screen and (max-width:600px) {
-    main.container-productos {
+    .container-productos {
         width: 100%;
         grid-template-columns: repeat(2, 1fr);
     }
 
-    main.container-productos .container-producto .container-img {
+    .container-productos .container-producto .container-img {
         max-width: 200px;
         max-height: 300px;
     }
 
-    main.container-productos .container-producto .container-descripcion::before {
+    .container-productos .container-producto .container-descripcion::before {
         border-width: 0 0px 28px 200px;
         border-color: transparent transparent #f7f7f7 transparent;
     }
 
-    main.container-productos .container-producto .container-descripcion {
+    .container-productos .container-producto .container-descripcion {
         width: 200px;
         height: 25%;
         bottom: -50px;
@@ -982,24 +983,24 @@ textarea::placeholder {
 }
 
 @media screen and (max-width:480px) {
-    main.container-productos {
+    .container-productos {
         margin-top: 3rem;
         width: 100%;
         grid-template-columns: 1fr;
         row-gap: 5rem;
     }
 
-    main.container-productos .container-producto .container-img {
+    .container-productos .container-producto .container-img {
         max-width: 300px;
         max-height: 400px;
     }
 
-    main.container-productos .container-producto .container-descripcion::before {
+    .container-productos .container-producto .container-descripcion::before {
         border-width: 0 0px 28px 300px;
         border-color: transparent transparent #f7f7f7 transparent;
     }
 
-    main.container-productos .container-producto .container-descripcion {
+    .container-productos .container-producto .container-descripcion {
         width: 300px;
         height: 15%;
 
