@@ -7,7 +7,8 @@ window.addEventListener("load", () =>{
     form.addEventListener("submit", (e) =>{
         e.preventDefault()
         validarCampos()
-    })
+        form.reset()
+    });
 
     const validarCampos = () => {
         const nameValue = name.value.trim()
