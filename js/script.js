@@ -35,3 +35,11 @@ flechaIzq.addEventListener("click", ()=> {
         imgIndexRe = 5;
     }
 })
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> rodrigo
+=======
+>>>>>>> rodrigo
