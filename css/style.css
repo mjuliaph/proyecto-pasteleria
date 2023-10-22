@@ -787,6 +787,25 @@ textarea::placeholder {
     box-shadow: none;
 }
 
+.form-control.ok input{
+    border: 0.1px solid rgb(0, 255, 21);
+}
+
+.form-control.falla input{
+    border: 0.1px solid rgb(255,0,0);
+}
+
+.form-control p{
+    position: relative;
+    font-size: small;
+    font-weight: 500;
+    text-align: left;
+}
+
+.form-control.falla{
+    visibility: visible;
+    color: rgb(255, 0, 0);
+}
 
 /*********RESPONSIVE*********/
 @media(max-width: 1024px) {

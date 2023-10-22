@@ -35,3 +35,5 @@ flechaIzq.addEventListener("click", ()=> {
         imgIndexRe = 5;
     }
 })
+
+
