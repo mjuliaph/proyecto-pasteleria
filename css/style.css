@@ -578,11 +578,33 @@ main.container-productos .container-producto .container-descripcion {
 }
 
 #api-container {
-    background: linear-gradient(45deg, rgba(253, 253, 255, 1) 0%, rgba(235, 195, 219, 1) 100%);
+    background: linear-gradient(45deg, #fdfdff 0%, rgba(235, 195, 219, 1) 100%);
     font-size: 1.25rem;
     text-align: center;
     padding: 0.5rem 0;
     margin: 0.5rem 0 2.5rem 0;
+}
+
+@keyframes apiApareciendo {
+    0% {
+        margin-left: -100%;
+        opacity: 0.3;
+    }
+
+    50% {
+        margin-top: 0;
+        opacity: 0.6;
+    }
+
+    100% {
+        margin-top: 50%;
+        opacity: 1;
+    }
+}
+
+#api-container span.text-animado {
+    animation: apiApareciendo;
+    animation-duration: 2s;
 }
 
 #api-container span.cursiva {
