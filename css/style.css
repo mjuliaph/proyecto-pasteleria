@@ -577,6 +577,20 @@ main.container-productos .container-producto .container-descripcion {
     align-items: center;
 }
 
+#api-container {
+    background: linear-gradient(45deg, rgba(253, 253, 255, 1) 0%, rgba(235, 195, 219, 1) 100%);
+    font-size: 1.25rem;
+    text-align: center;
+    padding: 0.5rem 0;
+    margin: 0.5rem 0 2.5rem 0;
+}
+
+#api-container span.cursiva {
+    font-family: 'Rouge Script', cursive;
+    color: #7c3a77;
+    font-size: 2rem;
+    line-height: 1;
+}
 
 /******** SECCIÓN ACADEMIA ********/
 .main-academia {
