@@ -497,6 +497,12 @@
     opacity: 0.8;
 }
 
+.img-hero .bg-hero.bg-historia {
+    background-image: url('../assets/2.png');
+    background-position: center;
+    background-position: 50% 70%;
+}
+
 .img-hero .bg-hero.bg-academia {
     background-image: url('../assets/hero-academia.jpg');
     background-position: center;
