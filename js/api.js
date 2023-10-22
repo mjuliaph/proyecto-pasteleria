@@ -28,7 +28,10 @@ window.addEventListener('load', () => {
                     temperatura.textContent = Math.floor(data.main.temp - KELVIN) + "°C";
                     resumen.textContent = data.weather[0].description;
                     locacion.textContent = data.name + "," + data.sys.country;
-                });
+                })
+                .catch(error => {
+                    console.log(error);
+                })
         });
     }
 
