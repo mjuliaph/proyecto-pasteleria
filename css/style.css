@@ -963,162 +963,162 @@ textarea::placeholder {
         grid-area: menu;
     }
 
-@media screen and (max-width: 576px) {
-    .main-contacto {
-        flex-direction: column;
-        margin: 2rem 0;
+    @media screen and (max-width: 576px) {
+        .main-contacto {
+            flex-direction: column;
+            margin: 2rem 0;
+        }
+
+        .main-contacto section {
+            width: 100%;
+        }
+
+        .main-contacto section .sucursales {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-top: 1.5rem;
+        }
+
+        .main-contacto section .sucursales:nth-child(even) {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .main-contacto section .sucursales .sucursales-texto {
+            text-align: start;
+        }
+
+        .main-contacto section .sucursales iframe {
+            border: 3px solid #7c3a77;
+            width: 100%;
+        }
+
+        .main-contacto form {
+            margin-top: 2rem;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .container-productos {
+            display: grid;
+            grid-template-columns: 1fr;
+            width: 100%;
+            row-gap: 2rem;
+            margin-left: 6rem;
+        }
+
+        .container-img img {
+            width: 18.5rem;
+        }
+
+        .container-productos .container-producto .container-descripcion::before {
+            border-width: 0 0px 28px 300px;
+            border-color: transparent transparent rgb(241, 188, 233) transparent;
+        }
+
+        .container-productos .container-producto .container-descripcion {
+            width: 300px;
+            height: 15%;
+
+        }
     }
 
-    .main-contacto section {
-        width: 100%;
+    @media screen and (max-width: 576px) {
+
+        /****Responsive Sección Academia  ****/
+        .main-academia .container {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .main-academia section:not(.impar) .container::before {
+            background-color: transparent;
+        }
+
+        .main-academia .container div {
+            max-width: 300px;
+        }
+
+        .main-academia .container p {
+            font-size: 0.85rem;
+            max-width: 300px;
+            text-align: center;
+            line-height: 1.6;
+            padding: 1rem 0;
+        }
+
+        .main-academia .container p span {
+            font-size: 1.5rem;
+        }
+
+        /****Responsive Sección Contacto  ****/
+        .main-contacto {
+            flex-direction: column;
+            margin: 2rem 0;
+        }
+
+        .main-contacto section {
+            width: 100%;
+        }
+
+        .main-contacto section .sucursales {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-top: 1.5rem;
+        }
+
+        .main-contacto section .sucursales:nth-child(even) {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .main-contacto section .sucursales .sucursales-texto {
+            text-align: start;
+        }
+
+        .main-contacto section .sucursales iframe {
+            border: 3px solid #7c3a77;
+            width: 100%;
+        }
+
+        .main-contacto form {
+            margin-top: 2rem;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
     }
 
-    .main-contacto section .sucursales {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin-top: 1.5rem;
-    }
+    @media screen and (max-width:480px) {
+        main.container-productos {
+            margin-top: 3rem;
+            width: 100%;
+            grid-template-columns: 1fr;
+            row-gap: 5rem;
+        }
 
-    .main-contacto section .sucursales:nth-child(even) {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
+        main.container-productos .container-producto .container-img {
+            max-width: 300px;
+            max-height: 400px;
+        }
 
-    .main-contacto section .sucursales .sucursales-texto {
-        text-align: start;
-    }
+        main.container-productos .container-producto .container-descripcion::before {
+            border-width: 0 0px 28px 300px;
+            border-color: transparent transparent #f7f7f7 transparent;
+        }
 
-    .main-contacto section .sucursales iframe {
-        border: 3px solid #7c3a77;
-        width: 100%;
-    }
+        main.container-productos .container-producto .container-descripcion {
+            width: 300px;
+            height: 15%;
 
-    .main-contacto form {
-        margin-top: 2rem;
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-
-    .container-productos {
-        display: grid;
-        grid-template-columns: 1fr;
-        width: 100%;
-        row-gap: 2rem;
-        margin-left: 6rem;
-    }
-
-    .container-img img {
-        width: 18.5rem;
-    }
-
-    .container-productos .container-producto .container-descripcion::before {
-        border-width: 0 0px 28px 300px;
-        border-color: transparent transparent rgb(241, 188, 233) transparent;
-    }
-
-    .container-productos .container-producto .container-descripcion {
-        width: 300px;
-        height: 15%;
-
-    }
-}
-
-@media screen and (max-width: 576px) {
-
-    /****Responsive Sección Academia  ****/
-    .main-academia .container {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .main-academia section:not(.impar) .container::before {
-        background-color: transparent;
-    }
-
-    .main-academia .container div {
-        max-width: 300px;
-    }
-
-    .main-academia .container p {
-        font-size: 0.85rem;
-        max-width: 300px;
-        text-align: center;
-        line-height: 1.6;
-        padding: 1rem 0;
-    }
-
-    .main-academia .container p span {
-        font-size: 1.5rem;
-    }
-
-    /****Responsive Sección Contacto  ****/
-    .main-contacto {
-        flex-direction: column;
-        margin: 2rem 0;
-    }
-
-    .main-contacto section {
-        width: 100%;
-    }
-
-    .main-contacto section .sucursales {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin-top: 1.5rem;
-    }
-
-    .main-contacto section .sucursales:nth-child(even) {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .main-contacto section .sucursales .sucursales-texto {
-        text-align: start;
-    }
-
-    .main-contacto section .sucursales iframe {
-        border: 3px solid #7c3a77;
-        width: 100%;
-    }
-
-    .main-contacto form {
-        margin-top: 2rem;
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-}
-
-@media screen and (max-width:480px) {
-    main.container-productos {
-        margin-top: 3rem;
-        width: 100%;
-        grid-template-columns: 1fr;
-        row-gap: 5rem;
-    }
-
-    main.container-productos .container-producto .container-img {
-        max-width: 300px;
-        max-height: 400px;
-    }
-
-    main.container-productos .container-producto .container-descripcion::before {
-        border-width: 0 0px 28px 300px;
-        border-color: transparent transparent #f7f7f7 transparent;
-    }
-
-    main.container-productos .container-producto .container-descripcion {
-        width: 300px;
-        height: 15%;
-
-    }
+        }
     }
 }
