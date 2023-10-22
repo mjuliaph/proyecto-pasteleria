@@ -1,10 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Rouge+Script&display=swap');
 
-<<<<<<< HEAD
 /*********RESETEO GENERAL*********/
 
-=======
->>>>>>> origin/branch_historia
 * {
     margin: 0;
     padding: 0;
@@ -13,7 +10,6 @@
 
 /*********ESTILOS INDEX*********/
 
-<<<<<<< HEAD
 /*   HEADER   */
 .header {
     top: 0;
@@ -112,21 +108,6 @@
 
 .section-products {
     background: rgb(250, 250, 250);
-=======
-.header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-right: 3rem;
-    background: linear-gradient(90deg, rgba(253, 253, 255, 1) 0%, rgba(235, 195, 219, 1) 100%);
-    box-shadow: 0px 12px 18px -8px rgba(0, 0, 0, 0.75);
-    font-family: 'Roboto Serif', sans-serif;
-}
-
-.logo {
-    max-width: 10rem;
-    /* Sacaría el display flex de acá */
->>>>>>> origin/branch_historia
     display: flex;
     justify-content: space-evenly;
     align-items: flex-start;
@@ -134,7 +115,6 @@
     background: linear-gradient(90deg, rgba(253, 253, 255, 1) 0%, rgba(235, 195, 219, 1) 100%);
 }
 
-<<<<<<< HEAD
 .products {
     display: inline-grid;
     grid-template-columns: repeat(3, 1fr);
@@ -283,13 +263,6 @@
 .insta a i {
     font-size: 3rem;
     text-decoration: none;
-=======
-.logo img {
-    border-radius: 10px;
-}
-
-.nav-list {
->>>>>>> origin/branch_historia
     display: flex;
     align-items: center;
     justify-content: center;
@@ -426,7 +399,6 @@
     box-shadow: 0 2px 5px rgba(250, 9, 178, 0.3);
 }
 
-<<<<<<< HEAD
 /*   FOOTER   */
 
 .footer {
@@ -463,13 +435,6 @@
 }
 
 .footer-ul li a {
-=======
-.nav-list li {
-    list-style: none;
-}
-
-.nav-list li a {
->>>>>>> origin/branch_historia
     text-decoration: none;
     color: rgb(151, 149, 149);
 }
@@ -705,206 +670,8 @@ main.container-productos .container-producto .container-descripcion {
     color: #7c3a77;
 }
 
-<<<<<<< HEAD
 
 /******** SECCIÓN CONTACTO ********/
-.main-contacto {
-    width: 100%;
-    display: flex;
-=======
-.nav-list li a:hover {
-    color: #f087c6;
-    border-bottom: 1px solid #f087c6;
-    transition: .5s ease;
-}
-
-/*  Carrousel    */
-
-#conteItemsCarrusel {
-    height: 25em;
-    overflow: hidden;
-    margin: 2em 2em 0 2em;
-    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 75);
-}
-
-.itemCarrusel {
-    position: relative;
-    height: 100%;
-    background-color: brown;
-}
-
-.tarjetaCarrusel {
-    height: 100%;
-}
-
-.flechasCarrusel {
-    position: absolute;
-    top: 0;
-    height: 100%;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 1em;
-}
-
-#tarjetaCarrusel-1 {
-    background-color: rgb(212, 49, 49);
-}
-
-#tarjetaCarrusel-2 {
-    background-color: rgb(122, 25, 93);
-}
-
-#tarjetaCarrusel-3 {
-    background-color: rgb(31, 24, 126);
-}
-
-a {
-    text-decoration: none;
-}
-
-a li {
-    list-style: none;
-}
-
-i {
-    color: rgb(255, 255, 255);
-}
-
-.contePuntos {
-    display: flex;
->>>>>>> origin/branch_historia
-    justify-content: space-evenly;
-    margin: 4rem 0;
-}
-
-<<<<<<< HEAD
-.main-contacto section {
-    width: 50%;
-}
-
-.main-contacto section .sucursales {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    margin-top: 3rem;
-}
-
-.main-contacto section .sucursales:nth-child(even) {
-    display: flex;
-    flex-direction: row-reverse;
-}
-
-=======
-.contePuntos>a {
-    font-size: 0.7em;
-}
-
-a>i {
-    color: rgb(207, 196, 196);
-}
-
-img {
-    width: 100%;
-    height: 100%;
-}
-
-
-/******** SECCIÓN ACADEMIA ********/
-
-.main-academia {
-    /* la fuente la pondría directamente en el body */
-    font-family: 'Roboto Serif', sans-serif;
-}
-
-.main-academia section {
-    position: relative;
-    width: 100%;
-    margin: 4rem 0;
-}
-
-.main-academia section.impar {
-    background-color: #EDE3E9;
-    padding: 2rem 0;
-    border-radius: 15px;
-}
-
-.main-academia .container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-}
-
-.main-academia section:not(.impar) .container::before {
-    content: '';
-    position: absolute;
-    background-color: #EDE3E9;
-    width: 4px;
-    height: 100%;
-    /* aspect-ratio: 1; */
-    border-radius: 10px;
-}
-
-.main-academia .container div {
-    max-width: 500px;
-    overflow: hidden;
-}
-
-.main-academia .container img {
-    display: block;
-    border-radius: 10px;
-    transition: 1s;
-    object-fit: cover;
-}
-
-.main-academia .container img:hover {
-    transform: scale(1.1);
-    opacity: 0.75;
-}
-
-.main-academia .container p {
-    align-self: center;
-    display: block;
-    max-width: 500px;
-    line-height: 2;
-}
-
-.main-academia .container p span {
-    font-family: 'Rouge Script', cursive;
-    color: #7c3a77;
-    font-size: 2rem;
-    line-height: 1;
-}
-
-.main-academia .btn-contacto {
-    background-color: #7c3a77;
-    width: 150px;
-    padding: 0.5rem 1rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 3rem auto;
-    border-radius: 50px;
-}
-
-.main-academia .btn-contacto:hover {
-    background-color: #EDE3E9;
-    border: 1px solid #7c3a77;
-}
-
-.main-academia .btn-contacto a {
-    color: #EDE3E9;
-}
-
-.main-academia .btn-contacto a:hover {
-    color: #7c3a77;
-}
-
-
-/******** SECCIÓN CONTACTO ********/
-
 .main-contacto {
     width: 100%;
     display: flex;
@@ -929,7 +696,6 @@ img {
     flex-direction: row-reverse;
 }
 
->>>>>>> origin/branch_historia
 .main-contacto section .sucursales .sucursales-texto {
     text-align: start;
 }
@@ -945,13 +711,6 @@ img {
     width: 30%;
 }
 
-<<<<<<< HEAD
-=======
-
-/********VER PORQUE NO QUEDA MUY LINDO PISAR TANTO LOS ESTILOS ********/
-
-
->>>>>>> origin/branch_historia
 input.form-control,
 select.form-select,
 textarea.form-control {
@@ -1190,9 +949,7 @@ textarea::placeholder {
         grid-area: menu;
     }
 
-=======
 @media screen and (max-width: 576px) {
->>>>>>> origin/branch_historia
     .main-contacto {
         flex-direction: column;
         margin: 2rem 0;
@@ -1231,7 +988,6 @@ textarea::placeholder {
         flex-direction: column;
         justify-content: center;
     }
-<<<<<<< HEAD
 
     .container-productos {
         display: grid;
@@ -1260,13 +1016,6 @@ textarea::placeholder {
 @media screen and (max-width: 576px) {
 
     /****Responsive Sección Academia  ****/
-=======
-}
-
-@media screen and (max-width: 991px) {}
-
-@media screen and (max-width: 576px) {
->>>>>>> origin/branch_historia
     .main-academia .container {
         flex-direction: column;
         justify-content: center;
@@ -1292,7 +1041,6 @@ textarea::placeholder {
     .main-academia .container p span {
         font-size: 1.5rem;
     }
-<<<<<<< HEAD
 
     /****Responsive Sección Contacto  ****/
     .main-contacto {
@@ -1332,82 +1080,6 @@ textarea::placeholder {
         display: flex;
         flex-direction: column;
         justify-content: center;
-=======
-}
-
-
-
-/*********SECCION PRODUCTOS********/
-main.container-productos {
-    width: 80%;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    column-gap: 0;
-    row-gap: 3rem;
-    justify-items: center;
-    /* cambiar esta propiedad: */
-    margin: 2rem auto;
-}
-
-main.container-productos .container-producto {
-    position: relative;
-}
-
-main.container-productos .container-producto .container-img {
-    max-width: 250px;
-    max-height: 400px;
-}
-
-main.container-productos .container-producto .container-descripcion::before {
-    content: '';
-    position: absolute;
-    border-style: solid;
-    border-width: 0 0px 28px 250px;
-    border-color: transparent transparent #f7f7f7 transparent;
-    left: 0px;
-    top: -28px;
-}
-
-main.container-productos .container-producto .container-descripcion {
-    position: absolute;
-    bottom: 0;
-    background-color: #f7f7f7;
-    width: 250px;
-    height: 15%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-@media screen and (max-width:991px) {
-    main.container-productos {
-        width: 100%;
-        grid-template-columns: repeat(3, 1fr);
-    }
-}
-
-@media screen and (max-width:600px) {
-    main.container-productos {
-        width: 100%;
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    main.container-productos .container-producto .container-img {
-        max-width: 200px;
-        max-height: 300px;
-    }
-
-    main.container-productos .container-producto .container-descripcion::before {
-        border-width: 0 0px 28px 200px;
-        border-color: transparent transparent #f7f7f7 transparent;
-    }
-
-    main.container-productos .container-producto .container-descripcion {
-        width: 200px;
-        height: 25%;
-        bottom: -50px;
->>>>>>> origin/branch_historia
     }
 }
 
@@ -1434,52 +1106,5 @@ main.container-productos .container-producto .container-descripcion {
         height: 15%;
 
     }
-<<<<<<< HEAD
+    }
 }
-=======
-}
-
-/* Sección "nosotros" */
-
-.nosotros {
-    background-color: #E6E4CE;
-    padding: 30px;
-  }
-  
-  .titulo {
-    color: #2C3E50;
-    font-size: 24px;
-    font-weight: bold;
-  }
-  
-  .parrafo {
-    color: #2C3E50;
-    font-size: 16px;
-  }
-  
-  .equipo {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-  }
-  
-  .miembro {
-    width: 30%;
-    margin-bottom: 30px;
-  }
-  
-  .miembro img {
-    width: 100%;
-    height: auto;
-  }
-  
-  .miembro h3 {
-    color: #2C3E50;
-    font-size: 16px;
-    font-weight: bold;
-  }
-  .equipo {
-    display: flex;
-  }
-  
->>>>>>> origin/branch_historia
