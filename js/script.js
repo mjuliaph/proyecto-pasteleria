@@ -35,3 +35,8 @@ flechaIzq.addEventListener("click", ()=> {
         imgIndexRe = 5;
     }
 })
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> rodrigo
