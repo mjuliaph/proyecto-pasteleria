@@ -36,7 +36,10 @@ flechaIzq.addEventListener("click", ()=> {
     }
 })
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 
+>>>>>>> rodrigo
+=======
 >>>>>>> rodrigo

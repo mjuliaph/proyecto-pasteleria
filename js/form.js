@@ -16,6 +16,8 @@ window.addEventListener("load", () =>{
 
         if(!nameValue){
             validarFalla(name, 'Campo vacio')
+        }else if(!validarName(nameValue)){
+            validarFalla(name, 'El nombre no es valido')
         }else{
             validarOk(name, '')
         }
@@ -26,6 +28,14 @@ window.addEventListener("load", () =>{
             validarFalla(email, 'El email no es valido')
         }else{
             validarOk(email, '')
+        }
+
+        if(!telValue){
+            validarFalla(tel, 'Campo Vacio')
+        }else if(!validarTel(telValue)){
+            validarFalla(tel, 'El telefono no es valido')
+        }else{
+            validarOk(tel, '')
         }
     }
 
@@ -44,8 +54,18 @@ window.addEventListener("load", () =>{
         formControl.className = 'form-control ok'
     }
 
+    const validarName = (name) => {
+        return /^[A-Z]+$/i.test(name);
+    }
+
     const validarEmail = (email) => {
         return /^[-\w.%+]{1,64}@(?:[A-Z0-9-]{1,63}\.){1,125}[A-Z]{2,63}$/i.test(email);
     }
 
+    const validarTel = (tel) => {
+        return /^(?:(?:00)?549?)?0?(?:11|[2368]\d)(?:(?=\d{0,2}15)\d{2})??\d{8}$/.test(tel);
+    }
+
 })
+
+
